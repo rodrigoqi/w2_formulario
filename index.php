@@ -32,10 +32,24 @@
 			</div>
 		</div>
 
-		<form class="formulario">
+		<form class="formulario" method="get" action="confirmacao.php">
 			<br>
 			<div class="row">
-				
+				<div class="col-md-6">
+					<!-- <label for="nome">Nome</label> -->
+					Nome<br>
+					<input type="text" name="nome" value="">
+				</div>
+				<div class="col-md-3">
+					<!-- <label for="usuario">Nome de usuário</label> -->
+					Nome de usuário<br>
+					<input type="text" name="usuario" value="">
+				</div>	
+				<div class="col-md-3">
+					<!-- <label for="senha">Senha</label> -->
+					Senha<br>
+					<input type="text" name="senha" value="">
+				</div>
 			</div>
 			<br>
 			<div class="row">

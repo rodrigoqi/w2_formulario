@@ -32,20 +32,34 @@
 			</div>
 		</div>
 
-		<form class="formulario">
-			<br>
-			<div class="row">
-				<?php
-					//Ler os dados vindos do formulário através da URL
-					//Colocar cada um deles dentro de uma variável
-					//Exibir com echo esses dados aqui dentro desta DIV
-				?>
-			</div>
+		<form class="formulario" method="get" action="index.php">
 			<br>
 			<div class="row text-center">
 				<div class="col-md-12">
+					<?php
+						//Ler os dados vindos do formulário através da URL
+						//Colocar cada um deles dentro de uma variável
+						//Exibir com echo esses dados aqui dentro desta DIV
+						if(isset($_GET["nome"])){
+							$nome = $_GET["nome"];
+							$usuario = $_GET["usuario"];
+							$senha = $_GET["senha"];
+
+							echo "<br>Nome: $nome";
+							echo "<br>Nome de usuário: $usuario";
+							echo "<br>Senha: $senha";
+						}
+
+					?>
+				</div>
+			</div>
+			<br>
+			<div class="row text-center">
+				
+				<div class="col-md-12">
 					<input type="submit" name="btnVoltar" value="Voltar" id="botao">
 				</div>
+				
 			</div>
 			
 
