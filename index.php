@@ -36,28 +36,67 @@
 			<br>
 			<div class="row">
 				<div class="col-md-6">
-					<!-- <label for="nome">Nome</label> -->
-					Nome<br>
+					<label for="nome">Nome</label>
 					<input type="text" name="nome" value="">
 				</div>
-				<div class="col-md-3">
-					<!-- <label for="usuario">Nome de usuário</label> -->
-					Nome de usuário<br>
+				<div class="col-md-2">
+					<label for="usuario">Nome de usuário</label>
 					<input type="text" name="usuario" value="">
 				</div>	
-				<div class="col-md-3">
-					<!-- <label for="senha">Senha</label> -->
-					Senha<br>
+				<div class="col-md-2">
+					<label for="senha">Senha</label>
 					<input type="text" name="senha" value="">
+				</div>
+				<div class="col-md-2">
+					Sexo:<br>
+					<input type="radio" name="sexo" value="Feminino">   Feminino<br>
+					<input type="radio" name="sexo" value="Masculino">   Masculino
 				</div>
 			</div>
 			<br>
 			<div class="row">
-				
+				<div class="col-md-2">
+					<label for="nascimento">Nascimento</label>
+					<input type="date" name="nascimento" value="">
+				</div>
+				<div class="col-md-2">
+					<label for="telefone">Fone</label>
+					<input type="text" name="telefone" value="">
+				</div>
+				<div class="col-md-2">
+					<label for="cpf">CPF</label>
+					<input type="text" name="cpf" value="">
+				</div>
+				<div class="col-md-6">
+					<label for="email">E-mail</label>
+					<input type="email" name="email" value="">
+				</div>
+
 			</div>
 			<br>
 			<div class="row">
+			<div class="col-md-2">
+					<label for="salario">Salário</label>
+					<input type="text" name="salario" value="">
+				</div>
+				<div class="col-md-4">
+					<label for="cidade">Cidade</label>
+					<input type="text" name="cidade" value="">
+				</div>
+				<div class="col-md-2">
+					<label for="cep">CEP</label>
+					<input type="text" name="cep" value="">
+				</div>
+				<div class="col-md-2">
+					<label for="uf">UF</label><br>
+					<select name="uf">
+						<option>PR</option>
+						<option>RS</option>
+						<option>SC</option>
+					</select>
+				</div>
 				
+
 			</div>
 			<br>
 			<div class="row">

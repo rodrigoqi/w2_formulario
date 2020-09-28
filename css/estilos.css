@@ -27,3 +27,8 @@
 input{
     width: 100%;
 }
+
+input[type=radio] { 
+    vertical-align: middle; 
+    width: unset;
+}
