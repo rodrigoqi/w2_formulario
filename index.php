@@ -37,15 +37,15 @@
 			<div class="row">
 				<div class="col-md-6">
 					<label for="nome">Nome</label>
-					<input type="text" name="nome" value="">
+					<input type="text" name="nome" value="" required>
 				</div>
 				<div class="col-md-2">
 					<label for="usuario">Nome de usuário</label>
-					<input type="text" name="usuario" value="">
+					<input type="text" name="usuario" value="" required pattern="[a-z]{1}[a-z0-9]{5,19}" oninvalid="this.setCustomValidity('O nome de usuário deve contem de 6 a 20 caracteres e utilizar somente letras minúsculas ou números')" >
 				</div>	
 				<div class="col-md-2">
 					<label for="senha">Senha</label>
-					<input type="text" name="senha" value="">
+					<input type="password" name="senha" value="" pattern="[a-zA-Z0-9]{8,}" required oninvalid="this.setCustomValidity('A senha deve possuir no mínimo 8 caracteres (letras ou números)')">
 				</div>
 				<div class="col-md-2">
 					Sexo:<br>
@@ -85,7 +85,7 @@
 				</div>
 				<div class="col-md-2">
 					<label for="cep">CEP</label>
-					<input type="text" name="cep" value="">
+					<input type="text" name="cep" value="" pattern="[0-9]{5}\-[0-9]{3}">
 				</div>
 				<div class="col-md-2">
 					<label for="uf">UF</label><br>
